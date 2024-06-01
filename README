@@ -16,3 +16,7 @@ source file (puzzles.but), which is the preferred form for
 modification. To generate the manual in other formats, rebuild it,
 or learn about Halibut, visit the Halibut website at
 <https://www.chiark.greenend.org.uk/~sgtatham/halibut/>.
+
+```
+gcc towers.c combi.c divvy.c drawing.c dsf.c findloop.c grid.c latin.c laydomino.c loopgen.c malloc.c matching.c midend.c misc.c penrose.c penrose-legacy.c ps.c random.c sort.c tdq.c tree234.c version.c -lm $(pkgconf --libs --cflags gtk+-3.0) gtk.c printing.c -o towers -D HELP_DIR='"'"$(pwd)/share/sgt-puzzles/help"'"' hat.c spectre.c no-icon.c
+```
